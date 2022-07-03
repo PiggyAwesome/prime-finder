@@ -1,4 +1,4 @@
-def do_thing(i):
+def isPrime(i):
     for x in range(round(i/2)):
             if x != i and x != 1 and x != 0:
                 try:
@@ -15,6 +15,6 @@ start_at = 100
 if __name__ == "__main__":
     for i in range(check_until):
         i += start_at
-        success, reason = do_thing(i)
+        success, reason = isPrime(i)
         if success:
             print(f"{i}", end=" ")
